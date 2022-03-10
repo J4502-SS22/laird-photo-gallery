@@ -18,6 +18,29 @@
     <img src="assets/images/sealion.jpeg" alt="">
     <figcaption>Day two: We visited the Sea Lion Caves.</figcaption>
   </figure>
+
+  <script type="text/javascript">
+    "use strict";
+
+    var toggle = document.getElementById("toggleButton");
+    var overallBody = document.getElementById("overallBody");
+
+    var clickCount = 0;
+
+    function clickedButton(){
+      clickCount = clickCount + 1;
+      alert("I've been clicked" + clickCount);
+    }
+
+    function changeColorMode(){
+      if (toggle.classList.contains("darkMode") === false) {
+        overallBody.cassList.remove("darkMode");
+      }
+      else {
+        overallBody.classList.add("darkMode")
+      }
+    }
+</script>
    </main>
   </body>
 </html>
